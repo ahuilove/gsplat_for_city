@@ -43,7 +43,7 @@ from nerfview import CameraState, RenderTabState, apply_float_colormap
 @dataclass
 class Config:
     # Disable viewer
-    disable_viewer: bool = False
+    disable_viewer: bool = True
     # Path to the .pt files. If provide, it will skip training and run evaluation only.
     ckpt: Optional[List[str]] = None
     # Name of compression strategy to use
@@ -52,11 +52,11 @@ class Config:
     render_traj_path: str = "interp"
 
     # Path to the Mip-NeRF 360 dataset
-    data_dir: str = "data/360_v2/garden"
+    data_dir: str = "/home/zhanqh/dataset/city/Matrixcity/small_city/block_1_colmap"
     # Downsample factor for the dataset
-    data_factor: int = 4
+    data_factor: int = 1
     # Directory to save results
-    result_dir: str = "results/garden"
+    result_dir: str = "/home/zhanqh/dataset/city/Matrixcity/small_city/gs_results"
     # Every N images there is a test image
     test_every: int = 8
     # Random crop size for training  (experimental)

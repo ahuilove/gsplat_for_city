@@ -125,3 +125,6 @@ data
 results
 
 !examples/benchmarks/compression/results/
+submodules/FlowEdit/outputs/
+submodules/FlowEdit/__pycache__
+.codex
